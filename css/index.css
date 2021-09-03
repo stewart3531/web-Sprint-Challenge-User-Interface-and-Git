@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    max-width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -87,18 +88,31 @@ p {
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.box {
+    width: 45%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 8%;
+}
+.middle-content h2 {
+    padding: 2% 0;
+    margin-bottom: 0;
+}
+
+.middle-content .box p {
+     margin: 3% 0;
+}
+
+.learn {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 34%;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 50px;
 }
 
 .middle-content .boxes .box {
@@ -107,9 +121,6 @@ p {
     background: black;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .bottom-content {
