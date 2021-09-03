@@ -67,6 +67,8 @@ p {
     line-height: 1.4;
 }
 
+
+/* All top content (about) */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -86,8 +88,9 @@ p {
     padding: 20px 0  
 }
 
+
+/* All middle content (pictures with description/"lets work together"*/
 .middle-content {
-    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -106,13 +109,13 @@ p {
      margin: 3% 0;
 }
 
-.learn {
+.middle-content .box .learn {
     border: 2px solid black;
     border-radius: 10px;
     width: 34%;
     text-align: center;
     padding: 2%;
-    margin-bottom: 50px;
+    margin: 6% 0;
 }
 
 .middle-content .boxes .box {
@@ -124,21 +127,17 @@ p {
 }
 
 .bottom-content {
+    margin: 0 0 5%;
+    padding: 0 3%;
+}
+
+/* Footer content (nav) */
+.footer {
     display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+    justify-content: center;
 }
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
 footer {
-    width: 100%;
+    width: 800px;
     background: black;
 }
 
