@@ -66,6 +66,18 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* Heading nav */
+.headNav {
+    padding: 3% 0;
+}
+.headNav a {
+    display: inline;
+    margin: 0 4.5%;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
 
 
 /* All top content (about) */
@@ -74,7 +86,7 @@ p {
     margin: 0 auto;
 }
 
-.top-content {
+.about-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -82,7 +94,7 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
+.about-content .text-container {
     width: 95%;
     padding: 0 1%;
     padding: 20px 0  
@@ -90,7 +102,7 @@ p {
 
 
 /* All middle content (pictures with description/"lets work together"*/
-.middle-content {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -100,16 +112,16 @@ p {
     border-bottom: 1px dashed black;
     margin-bottom: 8%;
 }
-.middle-content h2 {
+.gallery h2 {
     padding: 2% 0;
     margin-bottom: 0;
 }
 
-.middle-content .box p {
+.gallery .box p {
      margin: 3% 0;
 }
 
-.middle-content .box .learn {
+.gallery .box .learn {
     border: 2px solid black;
     border-radius: 10px;
     width: 34%;
@@ -118,7 +130,7 @@ p {
     margin: 6% 0;
 }
 
-.middle-content .boxes .box {
+.gallery .boxes .box {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -126,13 +138,13 @@ p {
     color: white;
 }
 
-.bottom-content {
+.letswork {
     margin: 0 0 5%;
     padding: 0 3%;
 }
 
 /* Footer content (nav) */
-.footer {
+.footerAbout {
     display: flex;
     justify-content: center;
 }
@@ -153,4 +165,64 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+
+
+/* Home page */
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
 }
