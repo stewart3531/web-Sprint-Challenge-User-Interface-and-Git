@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    max-width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -65,12 +66,112 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* Heading nav */
+.headNav {
+    padding: 3% 0;
+}
+.headNav a {
+    display: inline;
+    margin: 0 4.5%;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
 
+
+
+/* All top content (about) */
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-content .text-container {
+    width: 95%;
+    padding: 0 1%;
+    padding: 20px 0  
+}
+
+
+/* All middle content (pictures with description/"lets work together"*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box {
+    width: 45%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 8%;
+}
+.gallery h2 {
+    padding: 2% 0;
+    margin-bottom: 0;
+}
+
+.gallery .box p {
+     margin: 3% 0;
+}
+
+.gallery .box .learn {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 34%;
+    text-align: center;
+    padding: 2%;
+    margin: 6% 0;
+}
+
+.gallery .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+}
+
+.letswork {
+    margin: 0 0 5%;
+    padding: 0 3%;
+}
+
+/* Footer content (nav) */
+.footerAbout {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    width: 800px;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Home page styling*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -82,9 +183,10 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 20px 0;  
 }
 
+/* Middle content (boxes) */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -110,6 +212,37 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: none;
+}
+#box1 {
+    background-color: teal;
+}
+#box2 {
+    background-color: gold;
+}
+#box3 {
+    background-color: cadetblue;
+}
+#box4 {
+    background-color: coral;
+}
+#box5 {
+    background-color: crimson;
+}
+#box6 {
+    background-color: forestgreen;
+}
+#box7 {
+    background-color: darkorchid;
+}
+#box8 {
+    background-color: hotpink;
+}
+#box9 {
+    background-color: indigo;
+}
+#box10 {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -124,23 +257,4 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
-}
-
-footer {
-    width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
-
-footer nav a {
-    color: white;
-    text-decoration: none;
 }
